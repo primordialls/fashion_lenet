@@ -64,7 +64,7 @@ You should plot training and testing accuracy for each model together in the sam
 
 For dropout, the training accuracy must be measured without dropout during evaluation. This is handled by setting model.eval() during evaluation, which ensures dropout is disabled.
 
-LeNet-5 Architecture Modifications
+# LeNet-5 Architecture Modifications
 
 LeNet-5 is originally used for MNIST (32x32 grayscale images), so it does not fit FashionMNIST, which has 28x28 grayscale images. The modified architecture is:
 
