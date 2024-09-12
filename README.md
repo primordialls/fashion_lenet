@@ -1,4 +1,4 @@
-## Report by Assaf Cohen-Arazi (ac2975) and Elia Döhler (ed568)
+## Report by Assaf Cohen-Arazi and Elia Döhler
 
 # Training Each Model Setting
 
