@@ -5,34 +5,38 @@
 1.	Base Model (No Dropout, No Batchnorm, No Weight Decay):
 •	To train the base model:
 
-    lenet1 = Lenet5(dropoutp=0, bnorm=False, wdecay=0).to(device)
-    out[0] = trainLenet(lenet1, iterations, lr, batchsize)
-    torch.save(lenet1.state_dict(), "model0.pt")
-
+```
+lenet1 = Lenet5(dropoutp=0, bnorm=False, wdecay=0).to(device)
+out[0] = trainLenet(lenet1, iterations, lr, batchsize)
+torch.save(lenet1.state_dict(), "model0.pt")
+```
 
 2.	Model with Dropout (0.2):
 •	To train the model with dropout:
 
-	 lenet2 = Lenet5(dropoutp=0.2, bnorm=False, wdecay=0).to(device)
-	 out[1] = trainLenet(lenet2, iterations, lr, batchsize)
-	 torch.save(lenet2.state_dict(), "model1.pt")
-
+```
+lenet2 = Lenet5(dropoutp=0.2, bnorm=False, wdecay=0).to(device)
+out[1] = trainLenet(lenet2, iterations, lr, batchsize)
+torch.save(lenet2.state_dict(), "model1.pt")
+```
 
 3.	Model with Batch Normalization:
 •	To train the model with batch normalization:
 
-	 lenet3 = Lenet5(dropoutp=0, bnorm=True, wdecay=0).to(device)
-	 out[2] = trainLenet(lenet3, iterations, lr, batchsize)
-	 torch.save(lenet3.state_dict(), "model2.pt")
-
+```
+lenet3 = Lenet5(dropoutp=0, bnorm=True, wdecay=0).to(device)
+out[2] = trainLenet(lenet3, iterations, lr, batchsize)
+torch.save(lenet3.state_dict(), "model2.pt")
+```
 
 4.	Model with Weight Decay (1e-5):
 •	To train the model with weight decay:
 
-	 lenet4 = Lenet5(dropoutp=0, bnorm=False, wdecay=1e-4).to(device)
-	 out[3] = trainLenet(lenet4, iterations, lr, batchsize)
-	 torch.save(lenet4.state_dict(), "model3.pt")
-
+```
+lenet4 = Lenet5(dropoutp=0, bnorm=False, wdecay=1e-4).to(device)
+out[3] = trainLenet(lenet4, iterations, lr, batchsize)
+torch.save(lenet4.state_dict(), "model3.pt")
+```
 
 
 # Testing the Model with Saved Weights
