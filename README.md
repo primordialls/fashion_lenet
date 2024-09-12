@@ -29,7 +29,7 @@ out[2] = trainLenet(lenet3, iterations, lr, batchsize)
 torch.save(lenet3.state_dict(), "model2.pt")
 ```
 
-4.	Model with Weight Decay (1e-5):
+4.	Model with Weight Decay (1e-4):
 •	To train the model with weight decay:
 
 ```
