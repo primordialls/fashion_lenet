@@ -78,7 +78,7 @@ LeNet-5 is originally used for MNIST (32x32 grayscale images), so it does not fi
 
 Activation function: tanh
 
-Training Hyperparameters
+## Training Hyperparameters
 
 	1.	Batch Size: Set to 128.
 	2.	Learning Rate: Set to 0.001.
