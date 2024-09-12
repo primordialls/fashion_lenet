@@ -66,13 +66,13 @@ For dropout, the training accuracy must be measured without dropout during evalu
 
 LeNet-5 Architecture Modifications
 
-LeNet-5 is originally used for MNIST (28x28 grayscale images), so it fits FashionMNIST, which also has 28x28 grayscale images. The architecture is:
+LeNet-5 is originally used for MNIST (32x32 grayscale images), so it does not fit FashionMNIST, which has 28x28 grayscale images. The modified architecture is:
 
 	1.	Conv Layer 1: 1 input channel, 6 output channels, kernel size 5x5.
 	2.	Pooling Layer 1: Average pooling, 2x2 kernel.
 	3.	Conv Layer 2: 6 input channels, 16 output channels, kernel size 5x5.
 	4.	Pooling Layer 2: Average pooling, 2x2 kernel.
-	5.	Conv Layer 3: 16 input channels, 120 output channels, kernel size 4x4.
+	5.	Conv Layer 3: 16 input channels, 120 output channels, kernel size 4x4 (scaled from the original 5x5).
 	6.	Fully Connected Layer 1: 120 input features, 84 output features.
 	7.	Fully Connected Layer 2: 84 input features, 10 output classes.
 
