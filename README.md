@@ -1,5 +1,7 @@
 ## Report by Assaf Cohen-Arazi and Elia Döhler
 
+Fashion Dataset Classification using modified LeNet architecture.
+
 # Training Each Model Setting
 
 1.	Base Model (No Dropout, No Batchnorm, No Weight Decay):
